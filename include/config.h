@@ -36,6 +36,6 @@ private:
     std::string redis_host_ = "127.0.0.1";
     int redis_port_ = 6379;
 
-    int token_ttl_seconds_ = 900;
+    int token_ttl_seconds_ = 3600;
     int bcrypt_cost_ = 12;
 };

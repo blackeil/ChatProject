@@ -12,3 +12,7 @@ mysql_real_escape_string()
 凡是拼到 SQL 字符串里的外部数据，都该先转义。
 先 escape_sql，是因为你后面要把字符串直接拼进 SQL 语句；
 如果不先转义，用户输入里的特殊字符可能破坏 SQL 结构，甚至带来 SQL 注入风险。
+
+git add .
+git commit -m "更新说明"
+git push

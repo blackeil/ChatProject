@@ -360,6 +360,8 @@ CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o: \
  /home/crystal/ChatProject/safe-login-server/src/../include/handlers_auth.h \
  /usr/include/c++/13/optional \
  /home/crystal/ChatProject/safe-login-server/src/../include/redis_session_repo.h \
+ /home/crystal/ChatProject/safe-login-server/src/../include/../include/username_bloom_filter.h \
+ /usr/include/c++/13/shared_mutex \
  /home/crystal/ChatProject/safe-login-server/src/../include/http_auth.h \
  /home/crystal/ChatProject/safe-login-server/src/../include/json.hpp \
  /home/crystal/ChatProject/safe-login-server/src/../include/user_service.h \

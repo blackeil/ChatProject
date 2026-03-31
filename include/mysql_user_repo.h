@@ -36,6 +36,8 @@ public:
     bool update_password_hash(unsigned int user_id, const std::string& new_password_hash);
     //std::optional<T> 要么包含一个类型为 T 的值，要么不包含任何值（称为“空状态”）
     // has_value 判断是否有值
+
+    std::vector<std::string> list_all_usernames();  // SELECT username FROM users;
 private:
     // 连接池：pool_ 持有所有连接，idle_ 管理空闲连接索引。
     std::vector<MYSQL*> pool_;
@@ -53,5 +55,5 @@ private:
 
     MYSQL* acquire_connection();
     void release_connection(MYSQL* conn);
-    void close_all_connections();
+    void close_all_connections();    
 };

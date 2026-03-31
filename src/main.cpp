@@ -1,10 +1,12 @@
 #include <iostream>
+#include <chrono>
 #include "../include/config.h"
 #include "../cpp-httplib/httplib.h"
 #include "../include/handlers_auth.h"
 #include "../include/handlers_user.h"
 #include "../include/mysql_user_repo.h"
 #include "../include/redis_session_repo.h"
+#include "../include/username_bloom_filter.h"
 
 int main() {
     Config cfg;
@@ -26,6 +28,11 @@ int main() {
         return 1;
     }
 
+    // 新增：全量拉取用户名，构建 Bloom Filter
+    std::vector<std::string> usernames = user_repo.list_all_usernames();
+    UsernameBloomFilter username_bf(usernames.size() + 1000, 0.001);
+    username_bf.rebuild(usernames);
+
     RedisSessionRepo redis_repo(cfg.redis_host(), cfg.redis_port());
     if(!redis_repo.connect()) {
         std::cerr << "Failed to connect redis\n";
@@ -34,15 +41,11 @@ int main() {
 
     httplib::Server svr;    //创建一个 HTTP 服务器对象
 
-    svr.Post("/api/register", [&user_repo, &redis_repo, cfg](const httplib::Request& req, httplib::Response& res) {
-        handle_register(req, res, &user_repo, cfg.bcrypt_cost());
+    svr.Post("/api/register", [&user_repo, cfg, &username_bf](const httplib::Request& req, httplib::Response& res) {
+        handle_register(req, res, &user_repo, &username_bf, cfg.bcrypt_cost());
     }); // 当受到 POST /api/register、就执行后面这个 lambda，lambda再去调用handle_register
-    svr.Post("/api/login", [&user_repo, &redis_repo, cfg](const httplib::Request& req, httplib::Response& res) {
-        auto start = std::chrono::high_resolution_clock::now();
-        handle_login(req, res, &user_repo, &redis_repo, cfg.token_ttl_seconds());
-        auto end = std::chrono::high_resolution_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
-        std::cout << "handle_login() 执行时间: " << duration.count() << " 微秒" << std::endl;
+    svr.Post("/api/login", [&user_repo, &redis_repo, cfg, &username_bf](const httplib::Request& req, httplib::Response& res) {
+        handle_login(req, res, &user_repo, &redis_repo, &username_bf, cfg.token_ttl_seconds());
     });
     svr.Get("/api/profile", [&redis_repo, cfg](const httplib::Request& req, httplib::Response& res) {
         handle_profile(req, res, &redis_repo, cfg.token_ttl_seconds());
@@ -50,7 +53,7 @@ int main() {
     svr.Get("/api/user/me", [&user_repo, &redis_repo, cfg](const httplib::Request& req, httplib::Response& res) {
         handle_user_me(req, res, &user_repo, &redis_repo, cfg.token_ttl_seconds());
     });
-    svr.Post("/api/user/password", [&user_repo, &redis_repo, cfg](const httplib::Request& req, httplib::Response& res) {
+    svr.Post("/api/user/password", [&user_repo, &redis_repo, cfg, &username_bf](const httplib::Request& req, httplib::Response& res) {
         handle_change_password(req, res, &user_repo, &redis_repo, cfg.bcrypt_cost());
     });
     svr.Post("/api/logout", [&redis_repo](const httplib::Request& req, httplib::Response& res) {

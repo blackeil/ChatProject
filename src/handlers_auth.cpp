@@ -15,7 +15,7 @@ static void respond_service_result(httplib::Response& res, const ServiceResult& 
 }
 
 void handle_register(const httplib::Request& req, httplib::Response& res,
-                     MysqlUserRepo* repo, int bcrypt_cost) {
+                     MysqlUserRepo* repo, UsernameBloomFilter* bf, int bcrypt_cost) {
     try {
         json j = json::parse(req.body);
         if (!j.contains("username") || !j.contains("password")) {
@@ -25,8 +25,12 @@ void handle_register(const httplib::Request& req, httplib::Response& res,
 
         const std::string username = j["username"].get<std::string>();
         const std::string password = j["password"].get<std::string>();
-        respond_service_result(res, auth_service::register_user(repo, username, password, bcrypt_cost));
-        std::cout << "sucesss register new user, username :" << username << " password: " << password << std::endl;
+        ServiceResult res_tmp = auth_service::register_user(repo, username, password, bcrypt_cost);
+        respond_service_result(res, res_tmp);
+        if (res_tmp.code == api::CODE_OK && bf) {
+            bf->add(username);
+        }
+        // std::cout << "sucesss register new user, username :" << username << "\n";
     } catch (const std::exception& e) {
         std::cerr << e.what() << std::endl;
         api::respond_code(res, api::CODE_INVALID_JSON);
@@ -34,7 +38,7 @@ void handle_register(const httplib::Request& req, httplib::Response& res,
 }
 
 void handle_login(const httplib::Request& req, httplib::Response& res, MysqlUserRepo* repo,
-                  RedisSessionRepo* redis_repo, int token_ttl_seconds) {
+                  RedisSessionRepo* redis_repo, UsernameBloomFilter* bf, int token_ttl_seconds) {
     try {
         json j = json::parse(req.body);
         if (!j.contains("username") || !j.contains("password")) {
@@ -44,6 +48,11 @@ void handle_login(const httplib::Request& req, httplib::Response& res, MysqlUser
 
         const std::string username = j["username"].get<std::string>();
         const std::string password = j["password"].get<std::string>();
+        // bloom filter 只做前置剪枝，最终存在性仍以 MySQL 查询为准。
+        if (bf && !bf->possiblyContains(username)) {
+            api::respond_code_msg(res, 1005, "布隆过滤器判断: invalid username or password");
+            return;
+        }
         respond_service_result(
             res, auth_service::login_user(repo, redis_repo, username, password, token_ttl_seconds));
     } catch (const std::exception&) {
@@ -71,6 +80,7 @@ void handle_logout(const httplib::Request& req, httplib::Response& res,
 
     const std::string token = extract_token_from_request(req);
     ServiceResult result = auth_service::logout_user(redis_repo, token);
+
     if (result.code != api::CODE_OK) {
         respond_service_result(res, result);
         return;
@@ -94,4 +104,3 @@ std::optional<SessionInfo> require_auth_session(const httplib::Request& req, htt
     }
     return session;
 }
-

@@ -3,14 +3,17 @@
 #include <optional>
 #include "../cpp-httplib/httplib.h"
 #include "redis_session_repo.h"
+#include "../include/username_bloom_filter.h"
 
 struct MysqlUserRepo;
+struct UsernameBloomFilter;
 
 void handle_register(const httplib::Request& req, httplib::Response& res,
-                     MysqlUserRepo* repo, int bcrypt_cost);
+                     MysqlUserRepo* repo, UsernameBloomFilter* bf, 
+                     int bcrypt_cost);
 void handle_login(const httplib::Request& req, httplib::Response& res, 
                   MysqlUserRepo* repo, RedisSessionRepo* redis_repo,
-                  int token_ttl_seconds);
+                  UsernameBloomFilter* bf, int token_ttl_seconds);
 
 // 受保护接口示例：验证 session 后返回当前用户
 void handle_profile(const httplib::Request& req, httplib::Response& res,

@@ -17,7 +17,7 @@
         "socket": "/run/redis/redis-server.sock"
     },
     "auth": {
-        "token_ttl_seconds": 900, 
+        "token_ttl_seconds": 3600, 
         "bcrypt_cost": 12
     }
 }

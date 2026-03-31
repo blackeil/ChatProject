@@ -89,7 +89,7 @@ SQL 注入
 TTL = Time To Live（存活时间）
 token：登录认证，用户登陆后生成 token，TTL 到期需要重新登录
 Token 是 一种身份凭证（认证令牌）客户端之后的请求带上这个 token
----
+
 登录
  ↓
 服务器生成 token
@@ -113,16 +113,19 @@ Session：服务器保存的用户登录状态。
 后续请求携带 cookie
    ↓
 服务器查 session
----
+
 登录成功后会把 token 存进 Redis，同时设置过期时间。
 当存 session 时用 SETEX key 1800 value，Redis 会在 1800 秒后自动删除这条 key。
 用 Redis 的 TTL 做 session 自动过期，不用自己写定时任务清理，过期后 token 自然失效，符合常见的无状态 token + 有状态 session 的设计
-
+---
+bitmap 实现的布隆过滤器
+---
+服务器启动时，会先根据所有数据来初始化布隆过滤器，当收到登录请求时，会先根据布隆过滤器来判断该用户名是否一定不存在，如果能够判断不存在就不会查询 MySQL 数据库，减小开销。
 
 1. 注册：
 curl -X POST http://127.0.0.1:8080/api/register \
   -H "Content-Type: application/json" \
-  -d '{"username":"DuFu","password":"pc520656"}'
+  -d '{"username":"Mikey_","password":"pc520656"}'
 
 2. 登录：
 curl -X POST http://127.0.0.1:8080/api/login \

@@ -250,3 +250,32 @@ bool MysqlUserRepo::update_password_hash(unsigned int user_id, const std::string
     return mysql_affected_rows(conn) == 1;
 }
 
+std::vector<std::string> MysqlUserRepo::list_all_usernames() {
+    MYSQL* conn = acquire_connection();
+    if (!conn) return {};
+
+    struct ScopedConn {
+        MysqlUserRepo* self;
+        MYSQL* conn;
+        ~ScopedConn() { self->release_connection(conn); }
+    } scoped{this, conn};
+
+    const char* sql = "SELECT username FROM users";
+    if (mysql_query(conn, sql) != 0) {
+        return {};
+    }
+
+    MYSQL_RES* res = mysql_store_result(conn);
+    if (!res) return {};
+
+    std::vector<std::string> usernames;
+    usernames.reserve(static_cast<std::size_t>(mysql_num_rows(res)));
+
+    MYSQL_ROW row = nullptr;
+    while ((row = mysql_fetch_row(res)) != nullptr) {
+        usernames.emplace_back(row[0] ? row[0] : "");
+    }
+
+    mysql_free_result(res);
+    return usernames;
+}
