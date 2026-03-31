@@ -1,0 +1,23 @@
+{
+    "server": {
+        "port": 8080, 
+        "host": "0.0.0.0"
+    }, 
+    "mysql": {
+        "host": "127.0.0.1",
+        "port": 3306,
+        "pool_size": 8,
+        "database": "safe_login", 
+        "user": "crystal", 
+        "password": "pc520656"
+    }, 
+    "redis": {
+        "host": "127.0.0.1", 
+        "port": 6379,
+        "socket": "/run/redis/redis-server.sock"
+    },
+    "auth": {
+        "token_ttl_seconds": 900, 
+        "bcrypt_cost": 12
+    }
+}

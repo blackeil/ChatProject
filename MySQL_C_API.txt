@@ -1,0 +1,14 @@
+MySQL * mysql_init(MYSQL *mysql)
+分配或初始化一个MYSQL适合该连接的对象 mysql_real_connect()。
+如果 mysql 是一个NULL指针，则该函数分配、初始化并返回一个新对象。否则，初始化该对象并返回其地址。
+
+mysql_real_connect()
+mysql_real_connect()尝试与运行在 [此处应填写服务器名称] 上的 MySQL 服务器建立连接 host。
+客户端程序必须先成功连接到服务器，然后才能执行任何其他需要有效MYSQL连接处理程序结构的 API 函数。
+
+mysql_real_escape_string()
+此函数创建一个可在 SQL 语句中使用的合法 SQL 字符串
+
+凡是拼到 SQL 字符串里的外部数据，都该先转义。
+先 escape_sql，是因为你后面要把字符串直接拼进 SQL 语句；
+如果不先转义，用户输入里的特殊字符可能破坏 SQL 结构，甚至带来 SQL 注入风险。

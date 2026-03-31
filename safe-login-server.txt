@@ -1,0 +1,107 @@
+压力测试
+一、
+测试 profile：
+curl http://127.0.0.1:8080/api/profile \
+  -H "Authorization: Bearer "
+
+wrk -t2 -c20 -d30s \
+  -H "Authorization: Bearer eeeb8b6560cd37bacb3e2b573434213b14593521c47f3800c3b37715b189c64f" \
+  http://127.0.0.1:8080/api/profile
+
+-d30s：持续 30 秒
+-t：wrk 客户端自己开多少线程去发压
+-c：同时维持多少条并发连接
+
+Non-2xx or 3xx responses: 15664
+在这次压测里，有 15664 个响应的 HTTP 状态码不是 2xx，也不是 3xx
+
+1. wrk -t2 -c2 -d10s
+Running 10s test @ http://127.0.0.1:8080/api/profile
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   568.54us  185.37us   8.83ms   95.62%
+    Req/Sec     1.77k    81.45     1.88k    82.00%
+  35298 requests in 10.00s, 7.33MB read
+Requests/sec:   3529.07
+Transfer/sec:    750.86KB
+
+2. wrk -t2 -c10 -d10s
+Running 10s test @ http://127.0.0.1:8080/api/profile
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.46ms  573.59us   8.49ms   87.19%
+    Req/Sec     3.48k   538.84     4.08k    82.00%
+  69197 requests in 10.00s, 14.38MB read
+Requests/sec:   6917.41
+Transfer/sec:      1.44MB
+
+3. wrk -t2 -c20 -d10s
+Running 10s test @ http://127.0.0.1:8080/api/profile
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.24ms    6.39ms 229.35ms   98.85%
+    Req/Sec     3.48k   508.22     4.34k    82.00%
+  69234 requests in 10.00s, 14.39MB read
+Requests/sec:   6920.41
+Transfer/sec:      1.44MB
+
+当前系统对这个接口的吞吐上限大概就在 6.9k req/s 左右附近
+
+
+二、
+测试 login
+建脚本 login.lua:
+wrk.method = "POST"
+wrk.body   = '{"username":"testuser","password":"pc520656"}'
+wrk.headers["Content-Type"] = "application/json"
+
+线程 A 在做密码哈希比较
+线程 B 也在同时调用 crypt()
+两个线程共用了那块静态返回缓冲区
+结果某个线程拿到的哈希结果被另一个线程覆盖了
+最后比较失败，于是你代码返回了
+"invalid username or password"
+
+1. 
+wrk -t1 -c2 -d10s -s login.lua http://127.0.0.1:8080/api/login
+Running 10s test @ http://127.0.0.1:8080/api/login
+  1 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   185.04ms    2.99ms 198.10ms   76.85%
+    Req/Sec    11.31      3.48    20.00     86.44%
+  108 requests in 10.02s, 31.54KB read
+Requests/sec:     10.78
+Transfer/sec:      3.15KB
+
+2. 
+wrk -t2 -c10 -d10s -s login.lua http://127.0.0.1:8080/api/login
+Running 10s test @ http://127.0.0.1:8080/api/login
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   203.58ms   32.74ms 419.36ms   90.81%
+    Req/Sec    24.39     10.23    50.00     66.67%
+  468 requests in 10.03s, 136.65KB read
+Requests/sec:     46.68
+Transfer/sec:     13.63KB
+
+3. 
+wrk -t2 -c20 -d30s -s login.lua http://127.0.0.1:8080/api/login
+Running 30s test @ http://127.0.0.1:8080/api/login
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   325.45ms   91.41ms   1.52s    67.99%
+    Req/Sec    29.54     13.40    80.00     73.70%
+  1757 requests in 30.10s, 513.02KB read
+  Socket errors: connect 0, read 0, write 0, timeout 1
+Requests/sec:     58.37
+Transfer/sec:     17.04KB
+
+acquire_connection() 执行时间: 0 微秒
+mysql_query() 执行时间: 2626 微秒
+crypt_r() 函数执行时间：193893 微妙
+verify() 执行时间: 193942 微秒
+generate_token() + set_session() 执行时间: 351 微秒
+respond_code_msg
+handle_login() 执行时间: 197160 微秒
+
+!!! 在做密码哈希比较verify()消耗了大量的时间

@@ -1,0 +1,3 @@
+/home/crystal/ChatProject/safe-login-server/build/CMakeFiles/safe_login_server.dir
+/home/crystal/ChatProject/safe-login-server/build/CMakeFiles/edit_cache.dir
+/home/crystal/ChatProject/safe-login-server/build/CMakeFiles/rebuild_cache.dir
