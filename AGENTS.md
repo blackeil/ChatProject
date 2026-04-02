@@ -8,16 +8,6 @@ Important directories and files:
 - src/
 - README.md
 
-For username bloom filter tasks, focus on:
-- include/mysql_user_repo.h
-- src/mysql_user_repo.cpp
-- include/handlers_auth.h
-- src/handlers_auth.cpp
-- main / server bootstrap file
-- new files:
-  - include/username_bloom_filter.h
-  - src/username_bloom_filter.cpp
-
 ## Current project facts
 - HTTP currently uses httplib; do not replace the HTTP layer unless the task explicitly asks for it.
 - MySQL stores user account data.
@@ -32,19 +22,13 @@ For username bloom filter tasks, focus on:
 - Do not modify build output or third-party directories.
 - Keep naming simple and consistent with existing code style.
 - Do not introduce overly abstract class hierarchies for small features.
-- For the Bloom filter, the basic framework has already been developed.
-- Use std::vector<uint64_t> for the bit array unless the task explicitly requests otherwise.
 - Keep concurrency design practical: read-heavy, write-light usage should be considered.
-- The Bloom filter was updated after the registration was successful. Please check it
-- Service startup should support rebuilding the bloom filter from all usernames in MySQL.
 
 ## Safety and correctness rules
 - Never log plaintext passwords.
 - Do not accept auth token from URL query parameters.
 - Prefer prepared statements over manual SQL string concatenation when touching SQL code.
-- Do not let bloom filter decide registration success directly.
-- If bloom filter says "definitely not present", login may fail fast.
-- If bloom filter says "possibly present", MySQL must still be queried.
+- bloom_filer has already been developed.
 
 ## Task workflow
 For non-trivial tasks:
@@ -65,3 +49,28 @@ A task is complete only if:
 - New interfaces are complete and usable.
 - The implementation matches the requested architecture.
 - Output includes a short summary of what changed.
+
+## HTTP migration rules
+
+Current goal:
+Replace cpp-httplib with a self-implemented HTTP/1.1 server based on epoll + Reactor + non-blocking sockets.
+
+Scope for phase 1:
+- Keep existing auth business behavior unchanged.
+- Reuse service/repo layers whenever possible.
+- Build only the minimum HTTP/1.1 feature set needed by current auth APIs.
+
+Do not implement yet:
+- WebSocket
+- TLS/SSL
+- HTTP/2
+- chunked request body
+- multipart/form-data
+- chat messaging
+
+Architecture constraints:
+- Separate net/, http/, auth/, user/, repo/, config/ modules (has already been developed.)
+- I/O concerns must stay in net/http layers
+- business logic must stay in service/repo layers
+- prefer minimal diffs and incremental milestones
+- first make single-reactor work, then add worker thread pool later

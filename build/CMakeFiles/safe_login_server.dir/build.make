@@ -83,10 +83,122 @@ CMakeFiles/safe_login_server.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/main.cpp -o CMakeFiles/safe_login_server.dir/src/main.cpp.s
 
+CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o: /home/crystal/ChatProject/safe-login-server/src/auth/handlers_auth.cpp
+CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o -MF CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/auth/handlers_auth.cpp
+
+CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/auth/handlers_auth.cpp > CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/auth/handlers_auth.cpp -o CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o: /home/crystal/ChatProject/safe-login-server/src/auth/auth_service.cpp
+CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o -MF CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/auth/auth_service.cpp
+
+CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/auth/auth_service.cpp > CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/auth/auth_service.cpp -o CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o: /home/crystal/ChatProject/safe-login-server/src/auth/http_auth.cpp
+CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o -MF CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/auth/http_auth.cpp
+
+CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/auth/http_auth.cpp > CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/auth/http_auth.cpp -o CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o: /home/crystal/ChatProject/safe-login-server/src/user/handlers_user.cpp
+CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o -MF CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/user/handlers_user.cpp
+
+CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/user/handlers_user.cpp > CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/user/handlers_user.cpp -o CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o: /home/crystal/ChatProject/safe-login-server/src/user/user_service.cpp
+CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o -MF CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/user/user_service.cpp
+
+CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/user/user_service.cpp > CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/user/user_service.cpp -o CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o: /home/crystal/ChatProject/safe-login-server/src/repo/mysql_user_repo.cpp
+CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o -MF CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/repo/mysql_user_repo.cpp
+
+CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/repo/mysql_user_repo.cpp > CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/repo/mysql_user_repo.cpp -o CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o: /home/crystal/ChatProject/safe-login-server/src/repo/redis_session_repo.cpp
+CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o -MF CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/repo/redis_session_repo.cpp
+
+CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/repo/redis_session_repo.cpp > CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/repo/redis_session_repo.cpp -o CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.s
+
+CMakeFiles/safe_login_server.dir/src/config/config.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
+CMakeFiles/safe_login_server.dir/src/config/config.cpp.o: /home/crystal/ChatProject/safe-login-server/src/config/config.cpp
+CMakeFiles/safe_login_server.dir/src/config/config.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/safe_login_server.dir/src/config/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/config/config.cpp.o -MF CMakeFiles/safe_login_server.dir/src/config/config.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/config/config.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/config/config.cpp
+
+CMakeFiles/safe_login_server.dir/src/config/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/config/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/config/config.cpp > CMakeFiles/safe_login_server.dir/src/config/config.cpp.i
+
+CMakeFiles/safe_login_server.dir/src/config/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/config/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/config/config.cpp -o CMakeFiles/safe_login_server.dir/src/config/config.cpp.s
+
 CMakeFiles/safe_login_server.dir/src/api_response.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
 CMakeFiles/safe_login_server.dir/src/api_response.cpp.o: /home/crystal/ChatProject/safe-login-server/src/api_response.cpp
 CMakeFiles/safe_login_server.dir/src/api_response.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/safe_login_server.dir/src/api_response.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/safe_login_server.dir/src/api_response.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/api_response.cpp.o -MF CMakeFiles/safe_login_server.dir/src/api_response.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/api_response.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/api_response.cpp
 
 CMakeFiles/safe_login_server.dir/src/api_response.cpp.i: cmake_force
@@ -97,94 +209,10 @@ CMakeFiles/safe_login_server.dir/src/api_response.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/api_response.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/api_response.cpp -o CMakeFiles/safe_login_server.dir/src/api_response.cpp.s
 
-CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o: /home/crystal/ChatProject/safe-login-server/src/auth_service.cpp
-CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o -MF CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/auth_service.cpp
-
-CMakeFiles/safe_login_server.dir/src/auth_service.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/auth_service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/auth_service.cpp > CMakeFiles/safe_login_server.dir/src/auth_service.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/auth_service.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/auth_service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/auth_service.cpp -o CMakeFiles/safe_login_server.dir/src/auth_service.cpp.s
-
-CMakeFiles/safe_login_server.dir/src/config.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/config.cpp.o: /home/crystal/ChatProject/safe-login-server/src/config.cpp
-CMakeFiles/safe_login_server.dir/src/config.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/safe_login_server.dir/src/config.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/config.cpp.o -MF CMakeFiles/safe_login_server.dir/src/config.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/config.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/config.cpp
-
-CMakeFiles/safe_login_server.dir/src/config.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/config.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/config.cpp > CMakeFiles/safe_login_server.dir/src/config.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/config.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/config.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/config.cpp -o CMakeFiles/safe_login_server.dir/src/config.cpp.s
-
-CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o: /home/crystal/ChatProject/safe-login-server/src/handlers_auth.cpp
-CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o -MF CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/handlers_auth.cpp
-
-CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/handlers_auth.cpp > CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/handlers_auth.cpp -o CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.s
-
-CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o: /home/crystal/ChatProject/safe-login-server/src/handlers_user.cpp
-CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o -MF CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/handlers_user.cpp
-
-CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/handlers_user.cpp > CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/handlers_user.cpp -o CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.s
-
-CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o: /home/crystal/ChatProject/safe-login-server/src/http_auth.cpp
-CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o -MF CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/http_auth.cpp
-
-CMakeFiles/safe_login_server.dir/src/http_auth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/http_auth.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/http_auth.cpp > CMakeFiles/safe_login_server.dir/src/http_auth.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/http_auth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/http_auth.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/http_auth.cpp -o CMakeFiles/safe_login_server.dir/src/http_auth.cpp.s
-
-CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o: /home/crystal/ChatProject/safe-login-server/src/mysql_user_repo.cpp
-CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o -MF CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/mysql_user_repo.cpp
-
-CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/mysql_user_repo.cpp > CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/mysql_user_repo.cpp -o CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.s
-
 CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
 CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o: /home/crystal/ChatProject/safe-login-server/src/password_hash.cpp
 CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o -MF CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/password_hash.cpp
 
 CMakeFiles/safe_login_server.dir/src/password_hash.cpp.i: cmake_force
@@ -195,62 +223,34 @@ CMakeFiles/safe_login_server.dir/src/password_hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/password_hash.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/password_hash.cpp -o CMakeFiles/safe_login_server.dir/src/password_hash.cpp.s
 
-CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o: /home/crystal/ChatProject/safe-login-server/src/redis_session_repo.cpp
-CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o -MF CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/redis_session_repo.cpp
-
-CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/redis_session_repo.cpp > CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/redis_session_repo.cpp -o CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.s
-
-CMakeFiles/safe_login_server.dir/src/user_service.cpp.o: CMakeFiles/safe_login_server.dir/flags.make
-CMakeFiles/safe_login_server.dir/src/user_service.cpp.o: /home/crystal/ChatProject/safe-login-server/src/user_service.cpp
-CMakeFiles/safe_login_server.dir/src/user_service.cpp.o: CMakeFiles/safe_login_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/safe_login_server.dir/src/user_service.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safe_login_server.dir/src/user_service.cpp.o -MF CMakeFiles/safe_login_server.dir/src/user_service.cpp.o.d -o CMakeFiles/safe_login_server.dir/src/user_service.cpp.o -c /home/crystal/ChatProject/safe-login-server/src/user_service.cpp
-
-CMakeFiles/safe_login_server.dir/src/user_service.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/safe_login_server.dir/src/user_service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/crystal/ChatProject/safe-login-server/src/user_service.cpp > CMakeFiles/safe_login_server.dir/src/user_service.cpp.i
-
-CMakeFiles/safe_login_server.dir/src/user_service.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/safe_login_server.dir/src/user_service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/crystal/ChatProject/safe-login-server/src/user_service.cpp -o CMakeFiles/safe_login_server.dir/src/user_service.cpp.s
-
 # Object files for target safe_login_server
 safe_login_server_OBJECTS = \
 "CMakeFiles/safe_login_server.dir/src/main.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o" \
+"CMakeFiles/safe_login_server.dir/src/config/config.cpp.o" \
 "CMakeFiles/safe_login_server.dir/src/api_response.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/config.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o" \
-"CMakeFiles/safe_login_server.dir/src/user_service.cpp.o"
+"CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o"
 
 # External object files for target safe_login_server
 safe_login_server_EXTERNAL_OBJECTS =
 
 safe_login_server: CMakeFiles/safe_login_server.dir/src/main.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o
+safe_login_server: CMakeFiles/safe_login_server.dir/src/config/config.cpp.o
 safe_login_server: CMakeFiles/safe_login_server.dir/src/api_response.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/config.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o
 safe_login_server: CMakeFiles/safe_login_server.dir/src/password_hash.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o
-safe_login_server: CMakeFiles/safe_login_server.dir/src/user_service.cpp.o
 safe_login_server: CMakeFiles/safe_login_server.dir/build.make
 safe_login_server: CMakeFiles/safe_login_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/crystal/ChatProject/safe-login-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable safe_login_server"

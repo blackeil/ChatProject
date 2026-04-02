@@ -1,12 +1,12 @@
 #include <iostream>
 #include <chrono>
-#include "../include/config.h"
-#include "../cpp-httplib/httplib.h"
-#include "../include/handlers_auth.h"
-#include "../include/handlers_user.h"
-#include "../include/mysql_user_repo.h"
-#include "../include/redis_session_repo.h"
-#include "../include/username_bloom_filter.h"
+#include "config/config.h"
+#include "httplib.h"
+#include "auth/handlers_auth.h"
+#include "user/handlers_user.h"
+#include "repo/mysql_user_repo.h"
+#include "repo/redis_session_repo.h"
+#include "username_bloom_filter.h"
 
 int main() {
     Config cfg;

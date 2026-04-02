@@ -153,125 +153,101 @@ src/api_response.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/api_response.cpp.s
 .PHONY : src/api_response.cpp.s
 
-src/auth_service.o: src/auth_service.cpp.o
-.PHONY : src/auth_service.o
+src/auth/auth_service.o: src/auth/auth_service.cpp.o
+.PHONY : src/auth/auth_service.o
 
 # target to build an object file
-src/auth_service.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth_service.cpp.o
-.PHONY : src/auth_service.cpp.o
+src/auth/auth_service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.o
+.PHONY : src/auth/auth_service.cpp.o
 
-src/auth_service.i: src/auth_service.cpp.i
-.PHONY : src/auth_service.i
+src/auth/auth_service.i: src/auth/auth_service.cpp.i
+.PHONY : src/auth/auth_service.i
 
 # target to preprocess a source file
-src/auth_service.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth_service.cpp.i
-.PHONY : src/auth_service.cpp.i
+src/auth/auth_service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.i
+.PHONY : src/auth/auth_service.cpp.i
 
-src/auth_service.s: src/auth_service.cpp.s
-.PHONY : src/auth_service.s
+src/auth/auth_service.s: src/auth/auth_service.cpp.s
+.PHONY : src/auth/auth_service.s
 
 # target to generate assembly for a file
-src/auth_service.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth_service.cpp.s
-.PHONY : src/auth_service.cpp.s
+src/auth/auth_service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/auth_service.cpp.s
+.PHONY : src/auth/auth_service.cpp.s
 
-src/config.o: src/config.cpp.o
-.PHONY : src/config.o
+src/auth/handlers_auth.o: src/auth/handlers_auth.cpp.o
+.PHONY : src/auth/handlers_auth.o
 
 # target to build an object file
-src/config.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/config.cpp.o
-.PHONY : src/config.cpp.o
+src/auth/handlers_auth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.o
+.PHONY : src/auth/handlers_auth.cpp.o
 
-src/config.i: src/config.cpp.i
-.PHONY : src/config.i
+src/auth/handlers_auth.i: src/auth/handlers_auth.cpp.i
+.PHONY : src/auth/handlers_auth.i
 
 # target to preprocess a source file
-src/config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/config.cpp.i
-.PHONY : src/config.cpp.i
+src/auth/handlers_auth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.i
+.PHONY : src/auth/handlers_auth.cpp.i
 
-src/config.s: src/config.cpp.s
-.PHONY : src/config.s
+src/auth/handlers_auth.s: src/auth/handlers_auth.cpp.s
+.PHONY : src/auth/handlers_auth.s
 
 # target to generate assembly for a file
-src/config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/config.cpp.s
-.PHONY : src/config.cpp.s
+src/auth/handlers_auth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/handlers_auth.cpp.s
+.PHONY : src/auth/handlers_auth.cpp.s
 
-src/handlers_auth.o: src/handlers_auth.cpp.o
-.PHONY : src/handlers_auth.o
+src/auth/http_auth.o: src/auth/http_auth.cpp.o
+.PHONY : src/auth/http_auth.o
 
 # target to build an object file
-src/handlers_auth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.o
-.PHONY : src/handlers_auth.cpp.o
+src/auth/http_auth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.o
+.PHONY : src/auth/http_auth.cpp.o
 
-src/handlers_auth.i: src/handlers_auth.cpp.i
-.PHONY : src/handlers_auth.i
+src/auth/http_auth.i: src/auth/http_auth.cpp.i
+.PHONY : src/auth/http_auth.i
 
 # target to preprocess a source file
-src/handlers_auth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.i
-.PHONY : src/handlers_auth.cpp.i
+src/auth/http_auth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.i
+.PHONY : src/auth/http_auth.cpp.i
 
-src/handlers_auth.s: src/handlers_auth.cpp.s
-.PHONY : src/handlers_auth.s
+src/auth/http_auth.s: src/auth/http_auth.cpp.s
+.PHONY : src/auth/http_auth.s
 
 # target to generate assembly for a file
-src/handlers_auth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/handlers_auth.cpp.s
-.PHONY : src/handlers_auth.cpp.s
+src/auth/http_auth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/auth/http_auth.cpp.s
+.PHONY : src/auth/http_auth.cpp.s
 
-src/handlers_user.o: src/handlers_user.cpp.o
-.PHONY : src/handlers_user.o
+src/config/config.o: src/config/config.cpp.o
+.PHONY : src/config/config.o
 
 # target to build an object file
-src/handlers_user.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.o
-.PHONY : src/handlers_user.cpp.o
+src/config/config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/config/config.cpp.o
+.PHONY : src/config/config.cpp.o
 
-src/handlers_user.i: src/handlers_user.cpp.i
-.PHONY : src/handlers_user.i
-
-# target to preprocess a source file
-src/handlers_user.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.i
-.PHONY : src/handlers_user.cpp.i
-
-src/handlers_user.s: src/handlers_user.cpp.s
-.PHONY : src/handlers_user.s
-
-# target to generate assembly for a file
-src/handlers_user.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/handlers_user.cpp.s
-.PHONY : src/handlers_user.cpp.s
-
-src/http_auth.o: src/http_auth.cpp.o
-.PHONY : src/http_auth.o
-
-# target to build an object file
-src/http_auth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/http_auth.cpp.o
-.PHONY : src/http_auth.cpp.o
-
-src/http_auth.i: src/http_auth.cpp.i
-.PHONY : src/http_auth.i
+src/config/config.i: src/config/config.cpp.i
+.PHONY : src/config/config.i
 
 # target to preprocess a source file
-src/http_auth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/http_auth.cpp.i
-.PHONY : src/http_auth.cpp.i
+src/config/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/config/config.cpp.i
+.PHONY : src/config/config.cpp.i
 
-src/http_auth.s: src/http_auth.cpp.s
-.PHONY : src/http_auth.s
+src/config/config.s: src/config/config.cpp.s
+.PHONY : src/config/config.s
 
 # target to generate assembly for a file
-src/http_auth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/http_auth.cpp.s
-.PHONY : src/http_auth.cpp.s
+src/config/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/config/config.cpp.s
+.PHONY : src/config/config.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -297,30 +273,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/mysql_user_repo.o: src/mysql_user_repo.cpp.o
-.PHONY : src/mysql_user_repo.o
-
-# target to build an object file
-src/mysql_user_repo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.o
-.PHONY : src/mysql_user_repo.cpp.o
-
-src/mysql_user_repo.i: src/mysql_user_repo.cpp.i
-.PHONY : src/mysql_user_repo.i
-
-# target to preprocess a source file
-src/mysql_user_repo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.i
-.PHONY : src/mysql_user_repo.cpp.i
-
-src/mysql_user_repo.s: src/mysql_user_repo.cpp.s
-.PHONY : src/mysql_user_repo.s
-
-# target to generate assembly for a file
-src/mysql_user_repo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/mysql_user_repo.cpp.s
-.PHONY : src/mysql_user_repo.cpp.s
-
 src/password_hash.o: src/password_hash.cpp.o
 .PHONY : src/password_hash.o
 
@@ -345,53 +297,101 @@ src/password_hash.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/password_hash.cpp.s
 .PHONY : src/password_hash.cpp.s
 
-src/redis_session_repo.o: src/redis_session_repo.cpp.o
-.PHONY : src/redis_session_repo.o
+src/repo/mysql_user_repo.o: src/repo/mysql_user_repo.cpp.o
+.PHONY : src/repo/mysql_user_repo.o
 
 # target to build an object file
-src/redis_session_repo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.o
-.PHONY : src/redis_session_repo.cpp.o
+src/repo/mysql_user_repo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.o
+.PHONY : src/repo/mysql_user_repo.cpp.o
 
-src/redis_session_repo.i: src/redis_session_repo.cpp.i
-.PHONY : src/redis_session_repo.i
+src/repo/mysql_user_repo.i: src/repo/mysql_user_repo.cpp.i
+.PHONY : src/repo/mysql_user_repo.i
 
 # target to preprocess a source file
-src/redis_session_repo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.i
-.PHONY : src/redis_session_repo.cpp.i
+src/repo/mysql_user_repo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.i
+.PHONY : src/repo/mysql_user_repo.cpp.i
 
-src/redis_session_repo.s: src/redis_session_repo.cpp.s
-.PHONY : src/redis_session_repo.s
+src/repo/mysql_user_repo.s: src/repo/mysql_user_repo.cpp.s
+.PHONY : src/repo/mysql_user_repo.s
 
 # target to generate assembly for a file
-src/redis_session_repo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/redis_session_repo.cpp.s
-.PHONY : src/redis_session_repo.cpp.s
+src/repo/mysql_user_repo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/repo/mysql_user_repo.cpp.s
+.PHONY : src/repo/mysql_user_repo.cpp.s
 
-src/user_service.o: src/user_service.cpp.o
-.PHONY : src/user_service.o
+src/repo/redis_session_repo.o: src/repo/redis_session_repo.cpp.o
+.PHONY : src/repo/redis_session_repo.o
 
 # target to build an object file
-src/user_service.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user_service.cpp.o
-.PHONY : src/user_service.cpp.o
+src/repo/redis_session_repo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.o
+.PHONY : src/repo/redis_session_repo.cpp.o
 
-src/user_service.i: src/user_service.cpp.i
-.PHONY : src/user_service.i
+src/repo/redis_session_repo.i: src/repo/redis_session_repo.cpp.i
+.PHONY : src/repo/redis_session_repo.i
 
 # target to preprocess a source file
-src/user_service.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user_service.cpp.i
-.PHONY : src/user_service.cpp.i
+src/repo/redis_session_repo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.i
+.PHONY : src/repo/redis_session_repo.cpp.i
 
-src/user_service.s: src/user_service.cpp.s
-.PHONY : src/user_service.s
+src/repo/redis_session_repo.s: src/repo/redis_session_repo.cpp.s
+.PHONY : src/repo/redis_session_repo.s
 
 # target to generate assembly for a file
-src/user_service.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user_service.cpp.s
-.PHONY : src/user_service.cpp.s
+src/repo/redis_session_repo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/repo/redis_session_repo.cpp.s
+.PHONY : src/repo/redis_session_repo.cpp.s
+
+src/user/handlers_user.o: src/user/handlers_user.cpp.o
+.PHONY : src/user/handlers_user.o
+
+# target to build an object file
+src/user/handlers_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.o
+.PHONY : src/user/handlers_user.cpp.o
+
+src/user/handlers_user.i: src/user/handlers_user.cpp.i
+.PHONY : src/user/handlers_user.i
+
+# target to preprocess a source file
+src/user/handlers_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.i
+.PHONY : src/user/handlers_user.cpp.i
+
+src/user/handlers_user.s: src/user/handlers_user.cpp.s
+.PHONY : src/user/handlers_user.s
+
+# target to generate assembly for a file
+src/user/handlers_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user/handlers_user.cpp.s
+.PHONY : src/user/handlers_user.cpp.s
+
+src/user/user_service.o: src/user/user_service.cpp.o
+.PHONY : src/user/user_service.o
+
+# target to build an object file
+src/user/user_service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.o
+.PHONY : src/user/user_service.cpp.o
+
+src/user/user_service.i: src/user/user_service.cpp.i
+.PHONY : src/user/user_service.i
+
+# target to preprocess a source file
+src/user/user_service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.i
+.PHONY : src/user/user_service.cpp.i
+
+src/user/user_service.s: src/user/user_service.cpp.s
+.PHONY : src/user/user_service.s
+
+# target to generate assembly for a file
+src/user/user_service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/safe_login_server.dir/build.make CMakeFiles/safe_login_server.dir/src/user/user_service.cpp.s
+.PHONY : src/user/user_service.cpp.s
 
 # Help Target
 help:
@@ -405,36 +405,36 @@ help:
 	@echo "... src/api_response.o"
 	@echo "... src/api_response.i"
 	@echo "... src/api_response.s"
-	@echo "... src/auth_service.o"
-	@echo "... src/auth_service.i"
-	@echo "... src/auth_service.s"
-	@echo "... src/config.o"
-	@echo "... src/config.i"
-	@echo "... src/config.s"
-	@echo "... src/handlers_auth.o"
-	@echo "... src/handlers_auth.i"
-	@echo "... src/handlers_auth.s"
-	@echo "... src/handlers_user.o"
-	@echo "... src/handlers_user.i"
-	@echo "... src/handlers_user.s"
-	@echo "... src/http_auth.o"
-	@echo "... src/http_auth.i"
-	@echo "... src/http_auth.s"
+	@echo "... src/auth/auth_service.o"
+	@echo "... src/auth/auth_service.i"
+	@echo "... src/auth/auth_service.s"
+	@echo "... src/auth/handlers_auth.o"
+	@echo "... src/auth/handlers_auth.i"
+	@echo "... src/auth/handlers_auth.s"
+	@echo "... src/auth/http_auth.o"
+	@echo "... src/auth/http_auth.i"
+	@echo "... src/auth/http_auth.s"
+	@echo "... src/config/config.o"
+	@echo "... src/config/config.i"
+	@echo "... src/config/config.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mysql_user_repo.o"
-	@echo "... src/mysql_user_repo.i"
-	@echo "... src/mysql_user_repo.s"
 	@echo "... src/password_hash.o"
 	@echo "... src/password_hash.i"
 	@echo "... src/password_hash.s"
-	@echo "... src/redis_session_repo.o"
-	@echo "... src/redis_session_repo.i"
-	@echo "... src/redis_session_repo.s"
-	@echo "... src/user_service.o"
-	@echo "... src/user_service.i"
-	@echo "... src/user_service.s"
+	@echo "... src/repo/mysql_user_repo.o"
+	@echo "... src/repo/mysql_user_repo.i"
+	@echo "... src/repo/mysql_user_repo.s"
+	@echo "... src/repo/redis_session_repo.o"
+	@echo "... src/repo/redis_session_repo.i"
+	@echo "... src/repo/redis_session_repo.s"
+	@echo "... src/user/handlers_user.o"
+	@echo "... src/user/handlers_user.i"
+	@echo "... src/user/handlers_user.s"
+	@echo "... src/user/user_service.o"
+	@echo "... src/user/user_service.i"
+	@echo "... src/user/user_service.s"
 .PHONY : help
 
 

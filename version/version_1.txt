@@ -1,0 +1,4 @@
+version 1:
+
+改动声明：
+“保住现有 auth 业务，先自建一个最小可用的 HTTP/1.1 + epoll + Reactor 骨架，把 httplib 平稳抽掉”

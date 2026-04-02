@@ -1,7 +1,7 @@
 CMakeFiles/safe_login_server.dir/src/api_response.cpp.o: \
  /home/crystal/ChatProject/safe-login-server/src/api_response.cpp \
  /usr/include/stdc-predef.h \
- /home/crystal/ChatProject/safe-login-server/src/../include/api_response.h \
+ /home/crystal/ChatProject/safe-login-server/include/api_response.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/safe_login_server.dir/src/api_response.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/crystal/ChatProject/safe-login-server/src/../include/../cpp-httplib/httplib.h \
+ /home/crystal/ChatProject/safe-login-server/cpp-httplib/httplib.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
@@ -343,7 +343,7 @@ CMakeFiles/safe_login_server.dir/src/api_response.cpp.o: \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/any \
- /home/crystal/ChatProject/safe-login-server/src/../include/json.hpp \
+ /home/crystal/ChatProject/safe-login-server/include/json.hpp \
  /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
  /usr/include/c++/13/forward_list /usr/include/c++/13/bits/forward_list.h \
  /usr/include/c++/13/bits/forward_list.tcc /usr/include/c++/13/valarray \

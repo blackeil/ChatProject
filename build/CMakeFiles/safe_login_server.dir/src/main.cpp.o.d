@@ -157,8 +157,8 @@ CMakeFiles/safe_login_server.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime \
  /usr/include/c++/13/bits/parse_numbers.h \
- /home/crystal/ChatProject/safe-login-server/src/../include/config.h \
- /home/crystal/ChatProject/safe-login-server/src/../cpp-httplib/httplib.h \
+ /home/crystal/ChatProject/safe-login-server/include/config/config.h \
+ /home/crystal/ChatProject/safe-login-server/cpp-httplib/httplib.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -344,12 +344,11 @@ CMakeFiles/safe_login_server.dir/src/main.cpp.o: \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/any \
- /home/crystal/ChatProject/safe-login-server/src/../include/handlers_auth.h \
+ /home/crystal/ChatProject/safe-login-server/include/auth/handlers_auth.h \
  /usr/include/c++/13/optional \
- /home/crystal/ChatProject/safe-login-server/src/../include/../cpp-httplib/httplib.h \
- /home/crystal/ChatProject/safe-login-server/src/../include/redis_session_repo.h \
- /home/crystal/ChatProject/safe-login-server/src/../include/../include/username_bloom_filter.h \
+ /home/crystal/ChatProject/safe-login-server/include/repo/redis_session_repo.h \
+ /home/crystal/ChatProject/safe-login-server/include/username_bloom_filter.h \
  /usr/include/c++/13/shared_mutex \
- /home/crystal/ChatProject/safe-login-server/src/../include/handlers_user.h \
- /home/crystal/ChatProject/safe-login-server/src/../include/mysql_user_repo.h \
+ /home/crystal/ChatProject/safe-login-server/include/user/handlers_user.h \
+ /home/crystal/ChatProject/safe-login-server/include/repo/mysql_user_repo.h \
  /usr/include/c++/13/queue /usr/include/c++/13/bits/stl_queue.h

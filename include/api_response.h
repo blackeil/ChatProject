@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "../cpp-httplib/httplib.h"
+#include "httplib.h"
 #include "json.hpp"
 
 namespace api {
